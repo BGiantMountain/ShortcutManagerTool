@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uQHj9p2N9mI=",
+  "dgSpecHash": "zvl72qLDjcY=",
   "success": true,
   "projectFilePath": "C:\\Users\\BGiantMountain\\Documents\\GitHub\\ShortcutManagerTool\\ShortcutManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BGiantMountain\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.24\\microsoft.net.illink.tasks.8.0.24.nupkg.sha512",
-    "C:\\Users\\BGiantMountain\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.24\\microsoft.netcore.app.runtime.win-x64.8.0.24.nupkg.sha512",
-    "C:\\Users\\BGiantMountain\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.24\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.24.nupkg.sha512",
-    "C:\\Users\\BGiantMountain\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.24\\microsoft.aspnetcore.app.runtime.win-x64.8.0.24.nupkg.sha512"
+    "C:\\Users\\BGiantMountain\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.24\\microsoft.net.illink.tasks.8.0.24.nupkg.sha512"
   ],
   "logs": []
 }
