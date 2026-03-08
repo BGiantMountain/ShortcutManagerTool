@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShortcutManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10bacca5904e4581a9b2f2678942310c9ce207a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90a9baac03baf3b51700c1cf8a98c94a152c82c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShortcutManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShortcutManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
