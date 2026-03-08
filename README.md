@@ -1,111 +1,69 @@
-# 🔗 Akıllı Kısayol Merkezi — Kullanım Kılavuzu
+<div align="center">
 
-**Akıllı Kısayol Merkezi**, masaüstü kısayollarını kolayca oluşturmanıza ve mevcut bozuk kısayolları onarmanıza olanak sağlayan bir Windows uygulamasıdır.
+# 🔗 Shortcut Manager Tool / Akıllı Kısayol Merkezi
 
----
+<img src="https://img.shields.io/badge/WPF-Windows--Native-0078D7?style=flat-square&logo=windows" alt="WPF">
+<img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=dotnet" alt=".NET">
+<img src="https://img.shields.io/badge/Version-2.0-22C55E?style=flat-square" alt="v2.0">
 
-## 📋 Gereksinimler
+A premium, smart, and lightweight utility for Windows that allows you to generate mass shortcuts, test executables in isolated virtual modes, and easily repair broken shortcut targets. 
+<br/>
+Windows için toplu kısayol oluşturmanızı, izole sanal modda yürütülebilir dosyaları test etmenizi ve bozuk kısayol hedeflerini kolayca onarmanızı sağlayan premium, akıllı ve hafif bir araç.
 
-- Windows 10 / 11
-- .NET 8.0 Runtime (yoksa [buradan indirin](https://dotnet.microsoft.com/en-us/download/dotnet/8.0))
-
----
-
-## 🖥️ Arayüze Genel Bakış
-
-Uygulama iki sekmeden oluşur:
-
-| Sekme | Amaç |
-|---|---|
-| 🛠️ Yeni Kısayol Üret | Bir klasördeki .exe dosyaları için masaüstü kısayolu oluşturur |
-| ✏️ Kısayol Onar | Bozulmuş veya güncel olmayan mevcut bir .lnk dosyasını düzenler |
+</div>
 
 ---
 
-## 🛠️ Yeni Kısayol Üret
+## 🌍 English
 
-### Adım 1 — Uygulama Klasörünü Seçin
+Shortcut Manager is a compact productivity tool designed to manage Windows shortcuts seamlessly. Whether you're configuring a fresh environment or testing standalone applications from a network, Shortcut Manager simplifies the process with its elegant, dark-themed UI.
 
-- **"Klasör Seç..."** butonuna tıklayın ve uygulamanın bulunduğu klasörü seçin.
-- Alternatif olarak klasör yolunu doğrudan metin kutusuna yapıştırabilirsiniz.
-- Ağ (UNC) yolları da desteklenir: `\\SunucuAdı\Paylaşım\UygulamaKlasörü`
+### ✨ Features
 
-> Klasör seçildiğinde, içindeki tüm `.exe` dosyaları otomatik olarak ağaç görünümünde listelenir.
+- **Mass Shortcut Creation:** Scan directories up to a specific depth (1-5 levels) and instantly create desktop shortcuts for all underlying `.exe` files simultaneously.
+- **Smart Filtering:** Quickly search and filter specific applications within large folders.
+- **Virtual Run Mode (🔴):** Perfect for network or standalone applications. It temporarily copies the executable into an isolated local folder, runs it, and automatically cleans itself up when the process is closed.
+- **Custom Icons:** Easily override default program icons by supplying your own `.ico` or `.exe` file.
+- **Shortcut Doctor (Repair):** Select any broken `.lnk` file to quickly inspect and update its target path and working directory.
+- **Premium UI:** Refined dark and glassmorphism-inspired UI for maximum readability and visual appeal.
 
-### Adım 2 — Derinlik ve Arama
+### 🚀 Usage
 
-- **Derinlik Kaydırıcısı (1–5):** Klasör içinde kaç alt seviyeye kadar `.exe` aranacağını belirler. Varsayılan: 3.
-- **Ara Kutusu:** Listelenen dosyalar arasında anlık arama yapmanızı sağlar.
-
-### Adım 3 — Exe Dosyasını Seçin
-
-- Ağaç görünümünden kısayolunu oluşturmak istediğiniz `.exe` dosyasının yanındaki **onay kutusunu** işaretleyin.
-- Birden fazla `.exe` seçerek tek seferde birden fazla kısayol oluşturabilirsiniz.
-
-### Adım 4 — Seçenekler
-
-#### 🔴 Sanal Mod
-- Bu seçenek işaretlendiğinde uygulama, program her çalıştırıldığında:
-  1. Kaynak klasörü yerel bilgisayara geçici olarak kopyalar.
-  2. Uygulamayı yerel kopyadan çalıştırır.
-  3. Program kapandığında geçici kopyayı otomatik siler.
-- **Ne zaman kullanılır?** Ağ sürücüsündeki bir uygulama doğrudan ağdan çalışmıyorsa veya uyumluluk sorunları yaşanıyorsa.
-- Geçici dosyalar şuraya kaydedilir: `%LocalAppData%\ShortcutManager_VirtualApps\`
-
-> ⚠️ Sanal Mod ile oluşturulan kısayol, uygulamayı her açışta kopyalama işlemi yapacağından açılış süresi uzayabilir.
-
-### Adım 5 — Kısayol Adı Öneki
-
-- Masaüstünde oluşturulacak kısayolun adını belirler.
-- Boş bırakılırsa `.exe` dosyasının adı kullanılır.
-- Birden fazla `.exe` seçildiğinde: `Önek - ExeAdı` formatında adlandırılır.
-
-### Adım 6 — Özel İkon (İsteğe Bağlı)
-
-- **"İkon Seç..."** butonuyla `.ico` veya başka bir `.exe` dosyasını ikon kaynağı olarak seçebilirsiniz.
-- Boş bırakılırsa kısayolun ikonu olarak hedef `.exe` dosyasının kendi ikonu kullanılır.
-
-### Adım 7 — Oluştur
-
-- **"🚀 Masaüstüne Kısayol Oluştur"** butonuna tıklayın.
-- İşlem başarılıysa masaüstünüzde yeni kısayol(lar) belirir.
+1. **Deploying Shortcuts & Virtual Mode:** 
+   Go to the *New Shortcut* tab. Select your base directory and adjust the search depth. Select the executable(s) you wish to create a shortcut for. Check "Virtual Mode" if you want the app to run in a temporary container without leaving traces behind. Click "Create Desktop Shortcut".
+2. **Fixing Existing Shortcuts:**
+   Go to the *Repair Shortcut* tab. Select the `.lnk` file you want to fix. Directly update its Target and Working Directory without wrestling with native Windows properties dialogs.
 
 ---
 
-## ✏️ Kısayol Onar
+## 🇹🇷 Türkçe
 
-Mevcut bir `.lnk` dosyasının hedef yolu veya başlangıç dizini değişmişse bu sekmeyle düzeltebilirsiniz.
+Akıllı Kısayol Merkezi, Windows kısayollarını sorunsuz bir şekilde yönetmek için tasarlanmış kompakt bir üretkenlik aracıdır. Yeni bir sistem yapılandırırken veya ağ üzerindeki bağımsız uygulamaları (portable/standalone) test ederken, zarif ve koyu temalı arayüzü ile süreci büyük oranda basitleştirir.
 
-### Adım 1 — Kısayolu Seçin
-- **"Kısayol Seç..."** butonuyla onarmak istediğiniz `.lnk` dosyasını seçin.
-- Mevcut **Hedef Yol** ve **Başlangıç Yeri** otomatik olarak yüklenir.
+### ✨ Özellikler
 
-### Adım 2 — Yeni Değerleri Girin
-- **Yeni Hedef Yol:** Uygulamanın yeni `.exe` konumu.
-- **Yeni Başlangıç Yeri:** Genellikle `exe` dosyasının bulunduğu klasör.
+- **Toplu Kısayol Oluşturma:** Seçtiğiniz bir klasörü belirlediğiniz derinlik seviyesine (1-5 seviye) kadar tarayarak içindeki `.exe` dosyaları için aynı anda masaüstü kısayolları oluşturun.
+- **Akıllı Filtreleme:** Büyük klasörlerdeki yüzlerce dosya arasında anında arama yaparak sadece istediğiniz uygulamayı bulun.
+- **Sanal Mod (🔴):** Ağ programları veya kurulumsulaştırılmış (portable) uygulamalar için kusursuzdur. Çalıştırılabilir dosyayı geçici ve izole bir yerel klasöre kopyalar, çalıştırır ve program kapatıldığında hiçbir iz bırakmadan otomatik olarak kendini tamamen siler.
+- **Özel İkonlar:** Kısayolları oluştururken kendi `.ico` veya hedef `.exe` dosyanızı göstererek orijinal uygulama ikonlarını değiştirebilirsiniz.
+- **Kısayol Onarımı:** Hedefi değiştirilmiş veya bozulmuş herhangi bir `.lnk` dosyasını seçerek Hedef Klasör (Target) ve Başlangıç Yeri (Working Directory) değerlerini anında onarın.
+- **Premium Arayüz:** Maksimum okunabilirlik ve şıklık için cam benzeri (glassmorphism) tasarımdan ilham alan modern, tam karanlık mod arayüz.
 
-### Adım 3 — Kaydet
-- **"💾 Değişiklikleri Kaydet"** butonuna tıklayın.
-- Kısayol yerinde güncellenir, silip yeniden oluşturmanıza gerek kalmaz.
+### 🚀 Kullanım
 
----
-
-## 📁 Uygulama Dosya Konumları
-
-| Amaç | Konum |
-|---|---|
-| Sanal Mod launcher scriptleri | `%AppData%\ShortcutManager\Launchers\` |
-| Sanal Mod geçici uygulama kopyaları | `%LocalAppData%\ShortcutManager_VirtualApps\` |
+1. **Kısayol Dağıtımı & Sanal Çalıştırma:**
+   *Yeni Kısayol* sekmesine gidin. Kaynak klasörü seçin ve arama derinliğini ayarlayın. Listelenen `.exe`'lerden istediklerinizi seçin. Uygulamanın kalıntı bırakmadan izole bir şekilde çalışmasını isterseniz "Sanal Mod"u işaretleyin. "Masaüstüne Kısayol Oluştur" butonuna tıklayarak işlemi tamamlayın.
+2. **Mevcut Kısayolları Onarma:**
+   *Kısayol Onar* sekmesine gidin. Bozuk olan `.lnk` dosyasını seçin. Klasik Windows özellikler penceresiyle boğuşmadan Hedef ve Başlama yerini direkt güncelleyip kaydedin.
 
 ---
 
-## ❓ Sık Karşılaşılan Durumlar
+### 📋 Build / Derleme
 
-**Kısayol oluşturuldu ama ikon görünmüyor:**
-> Masaüstüne sağ tıklayıp "Yenile" yapın veya birkaç saniye bekleyin; Windows ikon önbelleğini günceller.
+This project requires **.NET 8.0**. You can compile it into a single, standalone executable using the terminal command below:
+<br/>
+Bu proje **.NET 8.0** gerektirir. Uygulamayı kendi başına çalışabilen tek bir `.exe` (standalone) halinde paketlemek için aşağıdaki komutu kullanabilirsiniz:
 
-**Sanal Mod kısayolu çalıştırıldığında siyah bir pencere kısa süre açılıp kapanıyor:**
-> Bu normaldir. PowerShell scripti arka planda kopyalama işlemi yapıyor. Uygulama kısa süre içinde başlayacaktır.
-
-**Ağ yolundaki klasör görünmüyor:**
-> UNC yolunu (`\\sunucu\klasör`) doğrudan metin kutusuna yapıştırın; "Klasör Seç..." dialogu ağ konumlarını her zaman göstermeyebilir.
+```bash
+dotnet publish "ShortcutManager.csproj" -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o "bin\Publish"
+```

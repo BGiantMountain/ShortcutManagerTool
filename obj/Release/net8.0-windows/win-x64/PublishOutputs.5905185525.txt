@@ -1,0 +1,2 @@
+C:\Users\BGiantMountain\Documents\GitHub\ShortcutManagerTool\bin\Publish\ShortcutManager.pdb
+C:\Users\BGiantMountain\Documents\GitHub\ShortcutManagerTool\bin\Publish\ShortcutManager.exe
